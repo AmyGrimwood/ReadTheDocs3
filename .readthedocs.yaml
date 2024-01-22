@@ -15,7 +15,7 @@ build:
 # Specifies the configuration of python environment to be used
 python:
   install:
-    - requirements: docs/requirements.txt
+    - requirements: docs/docrequirements.txt
 
 # Configure Sphinx documentation
 sphinx:
