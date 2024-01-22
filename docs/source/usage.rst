@@ -19,9 +19,6 @@ To retrieve a list of random ingredients,
 you can use the ``PannelAppDB.???????()`` function:
 
 
-The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
-or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
-will raise an exception.
 
 
 
