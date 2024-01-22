@@ -4,14 +4,20 @@
 # Required v2 of configuration file
 version: "2"
 
+# Configure the documentation build process.
 build:
+  # Docker image used for building the docs
   os: "ubuntu-22.04"
+  # specify version of tools used eg. python
   tools:
     python: "3.10"
 
+# Specifies the configuration of python environment to be used
 python:
   install:
     - requirements: docs/requirements.txt
 
+# Configure Sphinx documentation
 sphinx:
+  # Specify path to the conf.py
   configuration: docs/source/conf.py
