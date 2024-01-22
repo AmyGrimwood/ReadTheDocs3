@@ -16,8 +16,12 @@ build:
 python:
   install:
     - requirements: docs/docrequirements.txt
+    # Install our python package before building the docs
+    - method: pip
+      path: .
 
 # Configure Sphinx documentation
 sphinx:
   # Specify path to the conf.py
   configuration: docs/source/conf.py
+  #fail_on_warning: true
